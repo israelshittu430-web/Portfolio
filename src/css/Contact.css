@@ -1,0 +1,170 @@
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+     padding-left: 0%; 
+   margin-bottom: 100px;
+   padding-top: 60px;
+}
+.contact-left p{
+    margin-top: 30px;
+    color: var(--text-color);
+}
+.text-cc{
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 49px;
+    font-size: 25px;
+}
+.contact-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #ff004f; /* Your signature red border */
+    width: 100%;
+    max-width: 400px; /*Keeps it a card shape */
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card-container{
+    display: flex;
+    gap: 16px;
+}
+
+.contact-card-container, .contact-card, .h2{
+    color: var(--text-color);
+}
+.contact-icon{
+    font-size: 60px;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start; /* 👈 This pulls the form up to the top */
+}
+
+
+.btn{
+    display: block;
+   margin:  50px;
+   width: 30%;
+   border: 1px solid #ff004f;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+    color: #fff; 
+   transition: backgroud 0.5s;
+   background: black;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+
+.contact-right form{
+    width: 94%;
+    padding-left: 40px;
+
+}
+
+.form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.typing{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.emailing{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btnn{
+    display: block;
+   margin:  50px ;
+   width: fit-content;
+   border: 1px solid #ff004f;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #fff;
+   transition: backgroud 0.5s;
+}
+
+.btnn:hover{
+    background: #ff004f;
+} 
+
+.success-msg {
+    background: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #ff004f;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.btn, .btnn {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 25px;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.form input, 
+form textarea,
+.typing,
+.emailing {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

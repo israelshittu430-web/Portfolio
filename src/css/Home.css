@@ -1,0 +1,42 @@
+.header-text{
+    margin-left: 2%;
+    margin-top: 10%;
+     font-size: 25px; 
+     font-weight: bold;
+    color: var(--text--color);
+    padding-top: 20%;
+}  
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.heroimage{
+    align-items: flex-start;
+    background-image: url(imagebbb.jpeg);
+    background-size: cover; 
+    height: 75vh; 
+    width: 50%;
+    background-position: right -40px;
+    clip-path: circle(30% at center);
+      float: right;   
+     border-radius: 80%;  
+     margin-right: 2%; 
+    margin-top: -26%;
+    background-repeat: no-repeat;
+} 
+span{
+    color: red;
+}
+

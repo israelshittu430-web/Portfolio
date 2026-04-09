@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+.container{
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;  
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   max-width: 100%;
+}
+
+body, html {
+  overflow-x: hidden; /* ✅ This stops the whole page from swinging left/right */
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f1f1f1;
+  --secondary-text: #333;
+}
+
+[data-theme='dark'] {
+  --bg-color: #080808;
+  --text-color: #ffffff;
+  --card-bg: #262626;
+  --secondary-text: #cccccc;
+}
+ 

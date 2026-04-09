@@ -1,0 +1,201 @@
+@media only screen and (max-width: 768px) {
+    /* Stack the Hero Section */
+    .hero-section {
+        flex-direction: column-reverse; /* Image on top, text below */
+        text-align: center;
+
+    }
+
+    .header-text {
+        margin-top: 5%;
+        padding-top: 70px;
+        font-size: 18px;
+    }
+
+    .heroimage {
+        width: 100%; /* Full width on mobile */
+        height: 40vh;
+        margin-top: 20px;
+        float: none;
+    }
+    .sectionab{
+        width: 100%;
+    }
+    .about hr{
+        width: 100%;
+    }
+    /* Fix About Section width */
+    .about {
+        padding: 0 5%;
+    }
+    
+    .image-about {
+        width: 100%;
+        height: 70vh;
+        margin-top: 20px;
+        float: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .row {
+        flex-direction: column; /* Stacks Contact Info and Form */
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-left{
+        padding-left: 30%;
+    }
+    .contact-card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-card-container{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+    .contact-right {
+        padding-left: 0;
+        /* margin-top: 50px; */
+    }
+
+    .btn, .btnn {
+        width: 100%; /* Buttons become full width for easier tapping */
+        margin: 20px 0;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .services {
+        width: 100%;
+        padding: 1% 5%;
+    }
+    
+    .service-list {
+        grid-template-columns: 1fr; /* One service per row */
+    }
+
+    .images-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-sign, .image-cal, .image-mov {
+        width: 100%; /* Project images stack vertically */
+        height: 50vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+    /* 1. Make the container smaller and center it */
+    .work {
+        width: 80%;       /* Set the total width of the project card here */
+        margin: 0 auto 30px auto; /* Centers the card and adds bottom spacing */
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* 2. Make the image fill 100% of the container (which is 80% of the screen) */
+    .work img {
+        width: 100%;      /* Fills the .work container exactly */
+        margin-left: 0;   /* Remove manual margins */
+        border-radius: 30px;
+        display: block;
+        transition: transform 0.5s;
+        height: 80vh;
+
+    }
+
+    /* 3. Make the layer match the image perfectly */
+    .layer {
+        width: 100%;      /* Matches the image width exactly */
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        overflow: hidden;
+        transition: height 0.5s; /* Ensures the red slide is smooth */
+    }
+}
+
+
+
+
+
+
+
+
+/* Fix for the white boxes in error.jpeg */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Ensure images/containers don't create ghost scrolls */
+.image-about, .heroimage, .image-sign, .image-cal, .image-mov {
+    overflow: hidden;
+}
+
+
+
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+    color: var(--text-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show icon on mobile */
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%; /* Hide off-screen */
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        width: 60%;
+        text-align: center;
+        transition: 0.5s;
+        padding: 40px 0;
+        border-bottom: 2px solid #ff004f;
+    }
+
+    .nav-links.open {
+        right: 0; /* Slide in when open */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+}
+
+
+
+
+

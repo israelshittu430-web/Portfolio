@@ -1,0 +1,91 @@
+/* 1. The Main Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo to far left, Links to far right */
+    align-items: center;
+    padding: 25px ; /* Smaller vertical padding moves it "up"; 4% keeps it near the edges */
+    background: var(--bg-color);
+  color: var(--text-color);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Ensures it spans the whole browser width */
+    box-sizing: border-box; /* Prevents horizontal scrollbars */
+}
+
+/* 2. The Logo on the left */
+.nav-logo {
+    color: var(--text-color);
+    font-size: 30px; /* Increased size for visibility */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0; /* Removed extra padding to keep it at the top */
+    /* margin-top: -30px;
+     margin-left: -30px; */
+     padding-right: 20px;
+}
+
+/* 3. The Links on the right */ 
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -28px;
+}
+
+.nav-links li {
+    margin-left: 35px; /* Spacing between individual links */
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff004f;
+}
+
+/* 4. Hamburger - stays hidden on desktop */
+.hamburger {
+    display: none;
+    color: var(--bg-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+/* Icon container */
+.theme-icon {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode style (sun icon visible) */
+.theme-icon.dark {
+  background-color: #222;
+  color: #facc15; /* yellow sun */
+}
+
+/* Light mode style (moon icon visible) */
+.theme-icon.light {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Hover effect */
+.theme-icon:hover {
+  transform: rotate(20deg) scale(1.1);
+}
