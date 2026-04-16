@@ -33,7 +33,7 @@ const Service = () => {
              <div>
                   <i className='app-icon'> <FaAppStore /></i>
             <h2>Mern Websites</h2>
-            <p> am a passionate MERN Stack Developer with 5 months of hands-on 
+            <p> Am a passionate MERN Stack Developer with 5 months of hands-on 
                 experience building modern web applications using 
                 MongoDB, Express.js, React, and Node.js.</p>
                 <a href="#">Learn more</a>
