@@ -12,7 +12,7 @@ const Home = () => {
     <div>
         {/* HERO SECTION - Keep these together */}
         <div id='home' className='header-text'>
-            <p>Fronted Developer</p>
+            <p>Full Stack Developer</p>
             <h1>Hi, <span>Israel</span> From Nigeria</h1>
 
             <div className="heroimage"></div>
