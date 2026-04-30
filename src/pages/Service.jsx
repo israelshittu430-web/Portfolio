@@ -5,7 +5,6 @@ import { FaCode } from "react-icons/fa";
 import { FaAppStore } from "react-icons/fa";
 
 
-
 const Service = () => {
   return (
     <div className='services'>
