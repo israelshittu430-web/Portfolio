@@ -31,3 +31,7 @@ body, html {
   --secondary-text: #cccccc;
 }
  
+html {
+  scroll-behavior: smooth;
+}
+
